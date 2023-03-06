@@ -1,0 +1,97 @@
+﻿<html>
+<head>
+    <title>Login</title>
+    <link href="../../style.css" rel="stylesheet" />
+    <link href="../../res_external/materialize/css/materialize.css" rel="stylesheet" />
+    <link href="res_external/animate.css" rel="stylesheet" />
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Roboto-Regular;
+            background: ghostwhite;
+        }
+
+        @font-face {
+            font-family: 'Roboto-Regular';
+            src: url('res_external/materialize/fonts/roboto/Roboto-Regular.woff') format('woff');
+        }
+
+        .navbar-brand {
+            margin-top: 2.5% !important;
+            float: left
+        }
+
+        .navbar {
+            box-shadow: none;
+        }
+        #submit {
+            width: 84%;
+            /* margin: 8%; */
+            margin-left: 9%;
+        }
+        @media only screen and (min-width: 601px) {
+            .container {
+                width: 107%;
+            }
+        }
+    </style>
+    <script src="../../res_external/jquery-3.3.1.js"></script>
+    <script src="../../res_external/materialize/js/materialize.js"></script>
+    <script src="all.js"></script>
+</head>
+<body>
+    <!--=========== BEGIN HEADER SECTION ================-->
+    <header id="header">
+        <!-- BEGIN MENU -->
+        <div class="menu_area">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+
+                <img src="res_internal/images/college.png" style=" height: 147px;width:auto;float:left" />
+                <a class="navbar-brand" href="index.html">Bright&nbsp;Way&nbsp;Hill&nbsp;School</a>
+                <a class="right" style="cursor:pointer;font-size:1.3rem;padding:2%"  href="index.html">BACK  <i class="fas fa-arrow-left"></i></a>
+            </nav>
+        </div>
+        <!-- END MENU -->
+    </header>
+    <!--=========== END HEADER SECTION ================-->
+    <div class="container animated fadeIn">
+
+        <div class="col s12  z-depth-5" style="margin: 23%;background:white;padding:2%;margin-top:16%;">
+            <div class="row col s12">
+                <h3 class="col s12" style="color:grey">LOGIN <i class="fas fa-lock right"></i></h3>
+                <hr />
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user fa-2x prefix"></i>
+                    <input id="username" type="text" class=" validate">
+                    <label for="username">Username</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-key fa-2x prefix"></i>
+                    <input id="password" type="password" class=" validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+
+                <button id="submit" class="btn waves-effect waves-light" name="action">
+                    Login  <i class="fas fa-sign-in-alt fa-1x"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="res_internal/js/common/login.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>
